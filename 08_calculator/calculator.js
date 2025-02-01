@@ -7,14 +7,12 @@ const subtract = function (x, y) {
 };
 
 const sum = function (arr) {
-  let sum = 0;
-  arr.forEach((element) => sum += element);
+  const sum = arr.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
   return sum;
 };
 
 const multiply = function (arr) {
-  let mult = 1;
-  arr.forEach(element => mult *= element);
+  const mult = arr.reduce((accumulator, currentValue) => accumulator * currentValue, 1);
   return mult;
 };
 
